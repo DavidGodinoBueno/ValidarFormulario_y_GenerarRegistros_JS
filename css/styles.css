@@ -1,0 +1,106 @@
+body {
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:90%;
+    grid-template-areas:
+    "formul tabli";
+}
+
+.container_formulario {
+    grid-area:formul;
+}
+
+.container_tabla {
+    grid-area:tabli;
+}
+
+.formux_estilos {
+    border:solid black 1px;
+    padding:1.5em;
+    width:70%;
+}
+
+.errores {
+    color:red;
+    font-family:Arial;
+    display:none;
+}
+
+.tabla_estilos {
+    border-collapse:collapse;
+    text-align:center;
+}
+
+.tabla_estilos > tr, th, td { 
+    border:solid black 1px;
+    height:2em;
+    width:15%;
+}
+
+h2 {
+    font-family:Arial;
+}
+
+label {
+    font-family:Arial;
+}
+
+input[type="text"] {
+    margin-left:4em;
+    padding:0.5em;
+    background-color:rgb(214, 214, 214);
+    border:transparent;
+    outline:none;
+    width:50%;
+    margin-left:2em;
+    position:relative;
+}
+
+input[type="text"]:hover {
+    box-shadow:0px 0px 10px black;
+}
+
+input[type="submit"] {
+    background-color:rgb(21, 113, 199);
+    border:transparent;
+    padding:0.5em;
+    border-radius:20px;
+    color:white;
+    outline:none;
+    margin-left:4.5em;
+}
+
+input[type="submit"]:hover {
+    box-shadow:0px 0px 10px black;
+    cursor:pointer;
+}
+
+.mensaje-error {
+    background:linear-gradient(rgb(255, 81, 81), red);
+    color:white;
+    padding:0.5em;
+    border-radius:5px;
+    text-align:center;
+    font-family:Arial;
+    width:70%;
+    display:none;
+}
+
+.show-error {
+    display:block;
+}
+
+.show-mensaje {
+    display:block;
+}
+
+@media screen and (max-width:820px) {
+    body {
+        display:grid;
+        grid-template-columns:95%;
+        grid-template-rows:75% 50%;
+        grid-template-areas:
+        "formul"
+        "tabli";
+    }
+}

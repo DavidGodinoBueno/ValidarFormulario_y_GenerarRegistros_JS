@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+       <title>Formulario validación registros</title>
+       <meta charset="UTF-8"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       <link rel="stylesheet" type="text/css" href="css/styles.css">
+       <script type="text/javascript" src="js/program.js"></script>
+   </head>
+     <body>
+      <br><br>
+        <div class="container_formulario">
+            <h2>ALTA NUEVA</h2>
+            <p class="mensaje-error" id="mensaje-error">No se envia a la tabla hasta rellenar bien todos los campos.</p>
+            <form class="formux_estilos" id="formux" method="post" action="mailto:alumno.110246@ies-azarquiel.es" enctype="text/plain">
+               <label>Nombre</label>
+               <input type="text" id="nombre" placeholder="Introduzca el nombre..."/>
+               <p class="errores" id="errorNombre">Solo carácteres alfabéticos con una longitud entre 4 y 16 carácteres (se permiten espacios en blanco y acentos).</p>
+               <br/><br/>
+               <label>Apellidos</label>
+               <input type="text" id="apellidos" placeholder="Introduzca los apellidos..."/>
+               <p class="errores" id="errorApellidos">Solo carácteres alfabéticos con una longitud entre 4 y 25 carácteres (se permiten espacios en blanco y acentos).</p>
+               <br/><br/>
+               <label>DNI</label>
+               <input type="text" id="dni" placeholder="Introduzca el DNI..."/>
+               <p class="errores" id="errorDni">Los primeros 8 caracteres deben ser digitos numéricos y el último una letra mayúscula (sin espacios y longitud 9 caracteres).</p>
+               <br/><br/>
+               <label>Teléfono</label>
+               <input type="text" id="telefono" placeholder="Introduzca el teléfono..."/>
+               <p class="errores" id="errorTelefono">Solo dígitos numéricos sin espacios y con una longitud de 9 carácteres (números juntos).</p>
+               <br/><br/>
+               <input type="submit" id="adduser" value="Añadir usuario"/>
+               <br/>
+            </form>
+        </div>
+        <div class="container_tabla">
+            <h2>DATOS USUARIO</h2>
+            <table class="tabla_estilos" id="tabla">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>DNI</th>
+                    <th>Teléfono</th>  
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+     </body>
+</html>
